@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Butterfly Homepage</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Contact</a>
+            <a href="{{ url_for('input_page') }}">Get Started</a>  <!-- ✅ This matches the function name -->
+
+           
+        </div>
+    </nav>
+
+    <header class="hero-section">
+        <div class="hero-content">
+            <h1>Love is like a butterfly: It goes where it pleases and it pleases wherever it goes.</h1>
+            <p>They can't see how truly beautiful they are, but everyone else can. People are like that as well.</p>
+        </div>
+        <div class="carousel-controls">
+            <span class="left">&#10094;</span>
+            <span class="right">&#10095;</span>
+        </div>
+        <div class="dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+        </div>
+    </header>
+</body>
+</html>

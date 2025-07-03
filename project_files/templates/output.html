@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-links">
+            <a href="{{ url_for('main_index') }}">Home</a>
+            <a href="{{ url_for('input_page') }}">Predict Again</a>
+        </div>
+    </nav>
+
+    <section class="upload-section">
+        <h2>Prediction Result</h2>
+        <p>Predicted Butterfly: <strong>{{ butterfly }}</strong></p>
+        <img src="{{ user_image | replace('\\', '/') }}" alt="Uploaded Image" width="300">
+    </section>
+</body>
+</html>
