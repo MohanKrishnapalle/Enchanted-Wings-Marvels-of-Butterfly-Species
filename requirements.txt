@@ -1,1 +1,6 @@
-
+tensorflow
+flask
+keras
+numpy
+logging
+os
